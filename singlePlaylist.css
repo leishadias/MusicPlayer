@@ -1,0 +1,212 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+div::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.bg-color {
+  background-color: #0c1027 !important;
+}
+
+.bg-color-light {
+  background-color: #12193c !important;
+}
+
+.textcolor {
+  color: white !important;
+}
+
+.text-light-color {
+  color: lightgrey !important;
+}
+
+i {
+  color: lightgrey;
+}
+
+.radius-right-0 {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.radius-left-0 {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.border-radius-0 {
+  border-radius: 0;
+}
+
+.border-none {
+  border: none;
+}
+
+.border-50 {
+  border-radius: 50%;
+}
+
+/*main*/
+.main-content {
+  display: inline-block;
+  position: relative;
+  width: 73%;
+  top: 5rem;
+}
+
+.right-content {
+  display: inline-block;
+  width: 24%;
+  position: fixed;
+  top: 5rem;
+}
+
+.right-content-scroll {
+  overflow-y: scroll;
+  height: 90vh;
+}
+
+/*main*/
+.artist-img {
+  object-fit: cover;
+}
+
+.btn-bg {
+  background-image: linear-gradient(to right, mediumblue, blueviolet);
+}
+
+.playlist-bg {
+  background-color: black;
+}
+
+.playlist-card-width {
+  width: 100%;
+}
+
+.right-indent {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*music player (footer)*/
+.music-player-pos {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  transition: all 2s ease-in-out;
+}
+
+.player-bg {
+  background-color: black;
+}
+
+.card-width {
+  max-width: 30%;
+}
+
+.wrap-text {
+  width: 8rem;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.slider {
+  width: 75%;
+}
+
+.vol-slider {
+  width: 25%;
+}
+
+.text-width {
+  max-width: 150px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  opacity: 0;
+}
+
+.parent-container {
+  position: relative;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+/*animations*/
+
+.overlay:hover {
+  opacity: 0.6;
+}
+
+#music-player:target {
+  height: 10%;
+}
+
+.change-color:hover {
+  color: white !important;
+}
+
+/*music player*/
+.music-player-pos {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: all 2s ease-in-out;
+}
+
+.player-bg {
+  background-color: black;
+}
+
+.card-width {
+  max-width: 30%;
+}
+
+.slider-width {
+  width: 40%;
+}
+
+.slider {
+  width: 75%;
+}
+
+/*dimensions change*/
+
+@media screen and (max-width: 992px) {
+  .main-content {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 5rem;
+  }
+
+  .right-content {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 5rem;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  .hide-min {
+    width: 0;
+    overflow: hidden;
+  }
+}
